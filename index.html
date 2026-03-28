@@ -3,12 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Horizontal Menu</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar container */
+        nav {
+            background-color: #333;
+        }
+
+        /* Remove default list style */
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* makes it horizontal */
+        }
+
+        /* Menu items */
+        li {
+            margin: 0;
+        }
+
+        /* Links */
+        a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hover effect */
+        a:hover {
+            background-color: #555;
+        }
+
+        /* Active link (optional) */
+        .active {
+            background-color: #04AA6D;
+        }
+    </style>
 </head>
 <body>
-    
-    <h1>Welcome to HTML Home Page</h1>
-    <hr>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
 
 </body>
 </html>
